@@ -1,12 +1,46 @@
 {
   "name": "remark-quotebacks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.1",
+  "description": "remark plugin to render blockquotes as quotebacks",
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "mdast",
+    "plugin",
+    "remark",
+    "remark-plugin",
+    "unified"
+  ],
+  "repository": "github:stigi/remark-quotebacks",
+  "bugs": "https://github.com/stigi/remark-quotebacks/issues",
+  "author": "Ullrich Schäfer <hi+github@ullrich.is> (https://ullrich.is)",
+  "contributors": [],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@types/mdast": "^4.0.0",
+    "hast-util-whitespace": "^3.0.0",
+    "unist-util-visit": "^5.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "ava": "^6.1.2",
+    "rehype-stringify": "^10.0.0",
+    "remark": "^15.0.0",
+    "remark-cli": "^11.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
+    "unified": "^11.0.0",
+    "xo": "^0.58.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false
+  }
 }
