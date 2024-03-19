@@ -19,7 +19,7 @@
   "sideEffects": false,
   "main": "./src/index.js",
   "files": [
-    "dist"
+    "src"
   ],
   "dependencies": {
     "@types/mdast": "^4.0.0",
